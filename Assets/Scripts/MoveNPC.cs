@@ -18,7 +18,7 @@ public class MoveNPC : MonoBehaviour
     void Update()
     {
         /*to make the move*/
-        NPC.transform.Translate(0,0,speed*-Time.deltaTime);
+        NPC.transform.Translate(0,0,speed*Time.deltaTime);
         
          /* Something that I tried but didn't work
          if (Player.transform.Translate(10,0,0))

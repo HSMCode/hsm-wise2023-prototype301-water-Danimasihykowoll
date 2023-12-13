@@ -18,7 +18,7 @@ public class InvokeEnemies : MonoBehaviour
         //Invoke("SpawnMoreObjects", 2.0f);
 
        //Invokes the method after given time and repeats this every time defined
-       InvokeRepeating("SpawnMoreObjects", 4.0f, 10f);
+       InvokeRepeating("SpawnMoreObjects", 2.0f, 1f);
 
        //Call the custom method defined below
        // SpawnMoreObjects();   
