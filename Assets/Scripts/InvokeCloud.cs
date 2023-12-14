@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InvokePiranha : MonoBehaviour
+public class InvokeCloud : MonoBehaviour
 {
 
     public GameObject objectToSpawn;
@@ -18,7 +18,7 @@ public class InvokePiranha : MonoBehaviour
         //Invoke("SpawnMoreObjects", 2.0f);
 
        //Invokes the method after given time and repeats this every time defined
-       InvokeRepeating("SpawnMoreObjects", 20.0f, 4f);
+       InvokeRepeating("SpawnMoreObjects", 1.0f, 20.0f);
 
        //Call the custom method defined below
        // SpawnMoreObjects();   

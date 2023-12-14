@@ -18,7 +18,7 @@ public class InvokePiranha2 : MonoBehaviour
         //Invoke("SpawnMoreObjects", 2.0f);
 
        //Invokes the method after given time and repeats this every time defined
-       InvokeRepeating("SpawnMoreObjects", 40.0f, 12f);
+       InvokeRepeating("SpawnMoreObjects", 27.0f, 7f);
 
        //Call the custom method defined below
        // SpawnMoreObjects();   
