@@ -7,7 +7,7 @@ public class DuckMove : MonoBehaviour
     /*variable for the Game Object*/
     public GameObject Player;
 
-    /*variable for the movement of the Game Object*/
+    /*variable for the speed going up and down of the Game Object*/
     public float up = 20f; 
     public float down = 0.5f; 
 
