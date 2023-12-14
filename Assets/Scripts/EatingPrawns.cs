@@ -5,12 +5,13 @@ using TMPro;
 
 public class EatingPrawns : MonoBehaviour
 {
-    //Variable for text (amount of mangos)
+    //Variable for text (amount of prawns)
     public TMP_Text prawnText;
 
     //Variable for the counter
     public float counter = 0f;
 
+    //variable for the Win/restart screen
     public Restart logic2;
 
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class EatingPrawns : MonoBehaviour
      private void OnCollisionEnter(Collision collision)
     {
      
-        //when the player touches another gameObject with the tag Mango
+        //when the player touches another gameObject with the tag Food
         if (collision.gameObject.CompareTag("Food"))
         {
         
@@ -46,6 +47,7 @@ public class EatingPrawns : MonoBehaviour
           prawnText.text = counter.ToString() + "/10";
         } 
 
+        //to stop counting prawns when the duck eat the 10th prawn
         if(counter >=10)
         {
           prawnText.text =  "10/10";
@@ -57,6 +59,7 @@ public class EatingPrawns : MonoBehaviour
             // Destroy the prawn
             Destroy(collision.gameObject);
 
+          //to show the Win screen
           logic2.gameOver();
         } 
     }

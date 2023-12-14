@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MovePrawn : MonoBehaviour
 {
-    /*variable for the NPC*/
+    /*variable for the prawn*/
     public GameObject prawn;
 
-    /* variable for the movement of the NPC*/
+    /* variable for the up and left movement of the prawn*/
     public float speed = 1f;
     public float speed2 = 0.3f;
 

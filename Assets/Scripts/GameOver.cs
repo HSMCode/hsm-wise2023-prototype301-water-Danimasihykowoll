@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    //variable for the gameObject logic
+    //variable for the GameOver/restart screen
     public Restart logic;
 
     // Start is called before the first frame update
@@ -20,21 +20,20 @@ public class GameOver : MonoBehaviour
         
     }
 
-    //to put a game over screen when tucan touches a cobra
+    //to put a gameover screen when the duck touches a piranha or owl
      private void OnCollisionEnter(Collision collision)
     {
         
         
-        //when a cobra touches another gameObject with the tag Player
+        //when a piranha/owl touches another gameObject with the tag Player
         if (collision.gameObject.CompareTag("Player"))
         {
            
             // Destroy the Player
             Destroy(collision.gameObject);
 
-            
 
-            //to put the Game Over screen
+            //to put the GameOver screen
             logic.gameOver();
 
         }

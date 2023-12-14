@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DuckMove : MonoBehaviour
+public class MoveDuck : MonoBehaviour
 {
     /*variable for the Game Object*/
     public GameObject Player;
@@ -19,9 +19,6 @@ public class DuckMove : MonoBehaviour
 
     void Update()
     {
-         Vector3 positionOriginal = transform.position;
-
-       // Player.transform.Translate(0,0,speed*Time.deltaTime);
 
         if(Input.GetKeyDown("space"))
         {
@@ -32,8 +29,8 @@ public class DuckMove : MonoBehaviour
 
        if(Input.GetKey("space"))
         {
-
-        Player.transform.Translate(Vector3.up*down*Time.deltaTime, Space.World);
+            /* to move down the Game Object pressing space*/
+        Player.transform.Translate(Vector3.up*down*-Time.deltaTime, Space.World);
       
         }
     }
