@@ -46,17 +46,16 @@ public class EatingPrawns : MonoBehaviour
           prawnText.text = counter.ToString() + "/10";
         } 
 
+        if(counter >=10)
+        {
+          prawnText.text =  "10/10";
+        }
+
          if (collision.gameObject.CompareTag("Food2"))
         {
         
             // Destroy the prawn
             Destroy(collision.gameObject);
-
-            //counter adds 1
-            counter = 10;
-
-            //to update the counter in the text
-          prawnText.text = counter.ToString() + "/10";
 
           logic2.gameOver();
         } 

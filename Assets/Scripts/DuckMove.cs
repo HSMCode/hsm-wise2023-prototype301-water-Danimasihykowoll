@@ -11,10 +11,6 @@ public class DuckMove : MonoBehaviour
     public float up = 20f; 
     public float down = 0.5f; 
 
-    public float speed = 20f;
-
-    public float speed2 = 2f;
-
     // Update is called once per frame
     void Start()
     {

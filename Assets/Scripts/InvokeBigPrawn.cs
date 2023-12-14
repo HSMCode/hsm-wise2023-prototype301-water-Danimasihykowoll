@@ -44,6 +44,7 @@ public class InvokeBigPrawn : MonoBehaviour
       {
         BigP.transform.Translate(0,speed*-Time.deltaTime,speed2*Time.deltaTime);
    //     logic2.gameOver();
+
       }
     }
 }
