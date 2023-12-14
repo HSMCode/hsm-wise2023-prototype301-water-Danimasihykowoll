@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InvokePrawns : MonoBehaviour
+public class InvokePrawns2 : MonoBehaviour
 {
 
     public GameObject objectToSpawn;

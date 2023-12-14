@@ -7,7 +7,7 @@ public class CameraMove : MonoBehaviour
     /*variable for the Game Object*/
     public GameObject cameraObject;
 
-    public float speed = 2f;
+    public float speed = -2f;
 
     /*variable for the position of the NPC*/
     public float x_coordinate;
@@ -22,7 +22,7 @@ public class CameraMove : MonoBehaviour
         x_coordinate = cameraObject.transform.position.x;
 
         /*conditional of the movement, to keep moving the NPC into -3 and 3 in the x axis*/
-        if (x_coordinate>=0f){
+        if (x_coordinate<=0f){
             speed = 0f;
         }
     }

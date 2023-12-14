@@ -5,13 +5,13 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     //variable for the gameObject logic
-    //public Restart logic;
+    public Restart logic;
 
     // Start is called before the first frame update
     void Start()
     {
         //to call the gameObject tagged logic with the script Restart
-     //   logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<Restart>();
+       logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<Restart>();
     }
 
     // Update is called once per frame
@@ -32,10 +32,10 @@ public class GameOver : MonoBehaviour
             // Destroy the Player
             Destroy(collision.gameObject);
 
-            Debug.Log(" Game Over " + collision.gameObject.name);
+            
 
             //to put the Game Over screen
-           // logic.gameOver();
+            logic.gameOver();
 
         }
     }

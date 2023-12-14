@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - Food
+  - Logic
+  - Logic2
+  - Food2
   layers:
   - Default
   - TransparentFX
