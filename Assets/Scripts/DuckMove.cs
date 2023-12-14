@@ -30,7 +30,7 @@ public class DuckMove : MonoBehaviour
         if(Input.GetKeyDown("space"))
         {
             /* to move up the Game Object pressing space*/
-            Player.transform.Translate(Vector3.up*up*10*Time.deltaTime, Space.World);
+            Player.transform.Translate(Vector3.up*up*Time.deltaTime, Space.World);
 
         }  
 

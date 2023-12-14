@@ -40,7 +40,7 @@ public class InvokeBigPrawn : MonoBehaviour
     void SomeMethod()
     {
       //when counter is 50 appears the tucan partner from the right side of the screen moving to the left side
-      if(counter.counter==10f)
+      if(counter.counter>=10f)
       {
         BigP.transform.Translate(0,speed*-Time.deltaTime,speed2*Time.deltaTime);
    //     logic2.gameOver();
