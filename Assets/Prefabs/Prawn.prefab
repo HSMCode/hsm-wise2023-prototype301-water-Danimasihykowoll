@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 4997593269525745790}
   - component: {fileID: 2804913187831712070}
   - component: {fileID: 8603607308565724465}
-  - component: {fileID: 2330403218594896495}
   - component: {fileID: 11519709907016162}
   m_Layer: 0
   m_Name: Prawn
@@ -479,7 +478,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -487,33 +486,6 @@ CapsuleCollider:
   m_Height: 0.6216675
   m_Direction: 2
   m_Center: {x: 0, y: 0.46687827, z: 0.06640946}
---- !u!54 &2330403218594896495
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3922176847451839504}
-  serializedVersion: 4
-  m_Mass: 0.0001
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &11519709907016162
 MonoBehaviour:
   m_ObjectHideFlags: 0
