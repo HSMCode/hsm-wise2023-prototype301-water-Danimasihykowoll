@@ -8,13 +8,12 @@ public class MovePrawn : MonoBehaviour
     public GameObject prawn;
 
     /* variable for the up and left movement of the prawn*/
-    public float speed = 1f;
-    public float speed2 = 0.3f;
+    public float speed = -1f;
 
     // Update is called once per frame
     void Update()
     {
         /*to make the move*/
-        prawn.transform.Translate(0,speed*Time.deltaTime,speed2*Time.deltaTime);
+        prawn.transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
     }
 }

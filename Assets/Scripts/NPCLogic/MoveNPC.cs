@@ -8,16 +8,12 @@ public class MoveNPC : MonoBehaviour
     public GameObject NPC;
 
     /* variable for the movement of the NPC*/
-    public float speed = 1f;
-
-    /*variable for the position of the NPC*/
-    public float x_coordinate;
-
+    public float speed = -1f;
 
     // Update is called once per frame
     void Update()
     {
         /*to make the move*/
-        NPC.transform.Translate(0,0,speed*Time.deltaTime);
+        NPC.transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
     }
 }
