@@ -10,10 +10,6 @@ public class MoveCloud : MonoBehaviour
     /* variable for the movement of the cloud*/
     public float speed = 1f;
 
-    /*variable for the position of the cloud in x*/
-    public float x_coordinate;
-
-
     // Update is called once per frame
     void Update()
     {

@@ -15,7 +15,7 @@ public class InvokeCloud : MonoBehaviour
     {
 
        //Invokes the method after given time and repeats this every time defined
-       InvokeRepeating("SpawnMoreObjects", 1.0f, 20.0f);
+       InvokeRepeating("SpawnMoreObjects", 1.0f, 10.0f);
        
     }
 
