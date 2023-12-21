@@ -37,7 +37,7 @@ public class MoveDuck : MonoBehaviour
         }
         else if (currentY < 3)
         {
-            _rb.AddForce(0, returnspeed, 0, ForceMode.Force);
+            _rb.AddForce(0, returnspeed, 0, ForceMode.VelocityChange);
         }
         else if (currentY >= 3)
         {
@@ -59,6 +59,6 @@ public class MoveDuck : MonoBehaviour
     }
     void Dive()
     {
-        _rb.AddForce(0, speed, 0, ForceMode.Force);
+        _rb.AddForce(0, speed, 0, ForceMode.VelocityChange);
     }
 }

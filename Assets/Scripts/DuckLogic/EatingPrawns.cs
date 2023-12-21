@@ -16,7 +16,6 @@ public class EatingPrawns : MonoBehaviour
 
     //declare AudioSource
     AudioSource m_crunch;
-    public AudioClip crunchSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +39,7 @@ public class EatingPrawns : MonoBehaviour
         if (other.gameObject.CompareTag("Food"))
         {
             Destroy(other.gameObject);
-            m_crunch.PlayOneShot(crunchSFX, 0.7F);
+            m_crunch.Play();
             counter = counter + 1f;
             prawnText.text = counter.ToString() + "/10";
         }

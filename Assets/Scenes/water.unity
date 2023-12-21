@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1930874286}
   offset: {x: 0, y: 0, z: 0}
-  minY: -2
+  minY: -1
   maxY: 1
 --- !u!1001 &1219352224
 PrefabInstance:
@@ -2301,7 +2301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4110804843317464259, guid: 4af25e77b6c6dbe478a37a40db8b128b, type: 3}
       propertyPath: speed
-      value: -0.95
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: 4110804843317464259, guid: 4af25e77b6c6dbe478a37a40db8b128b, type: 3}
       propertyPath: Player
@@ -2313,7 +2313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4110804843317464259, guid: 4af25e77b6c6dbe478a37a40db8b128b, type: 3}
       propertyPath: returnspeed
-      value: 0.53
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 6549138120988747126, guid: 4af25e77b6c6dbe478a37a40db8b128b, type: 3}
       propertyPath: logic2
@@ -2321,7 +2321,7 @@ PrefabInstance:
       objectReference: {fileID: 1342647237}
     - target: {fileID: 6549138120988747126, guid: 4af25e77b6c6dbe478a37a40db8b128b, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6549138120988747126, guid: 4af25e77b6c6dbe478a37a40db8b128b, type: 3}
       propertyPath: prawnText
