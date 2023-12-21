@@ -30,6 +30,6 @@ public class InvokePiranha : MonoBehaviour
     {
         newY = Random.Range(minY, maxY);
         Vector3 offset = new Vector3(0, newY, 0);
-        GameObject spawnedObject = Instantiate(objectToSpawn, transform.position + offset, Quaternion.identity);
+        GameObject spawnedObject = Instantiate(objectToSpawn, transform.position + offset, transform.rotation);
     }
 }

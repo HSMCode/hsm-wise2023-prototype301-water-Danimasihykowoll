@@ -9,6 +9,12 @@ public class MovePrawn : MonoBehaviour
 
     /* variable for the up and left movement of the prawn*/
     public float speed = -1f;
+    public float upspeed;
+
+    void Start()
+    {
+        upspeed = speed / -3;
+    }
 
     // Update is called once per frame
     void Update()
