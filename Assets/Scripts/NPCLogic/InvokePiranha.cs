@@ -7,9 +7,9 @@ public class InvokePiranha : MonoBehaviour
 
     public GameObject objectToSpawn;
     private Vector3 offset;
-    public int minY = -2;
-    public int maxY = 1;
-    private int newY;
+    public float minY = -1.6f;
+    public float maxY = 1.2f;
+    private float newY;
 
     // Start is called before the first frame update
     void Start()

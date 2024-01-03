@@ -7,9 +7,9 @@ public class InvokeOwl : MonoBehaviour
 
     public GameObject objectToSpawn;
     public Vector3 offset;
-    public int minY = -2;
-    public int maxY = 1;
-    private int newY;
+    public float minY = 1.2f;
+    public float maxY = 3.7f;
+    private float newY;
 
     // Start is called before the first frame update
     void Start()

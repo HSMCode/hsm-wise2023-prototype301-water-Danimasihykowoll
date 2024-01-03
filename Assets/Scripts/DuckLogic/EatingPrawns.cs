@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class EatingPrawns : MonoBehaviour
 {
+    public static bool win = false;
     //Variable for text (amount of prawns)
     public TMP_Text prawnText;
 
@@ -31,11 +33,16 @@ public class EatingPrawns : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if ( win == true && Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene("water");
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
+      if (win == false)
+      { 
         if (other.gameObject.CompareTag("Food"))
         {
             Destroy(other.gameObject);
@@ -45,8 +52,11 @@ public class EatingPrawns : MonoBehaviour
         }
         if (counter >= 10)
         {
-          prawnText.text =  "10/10";
+            prawnText.text = "10/10";
+            logic2.gameOver();
+            win = true;
         }
+      }
     }
 
     //When duck collides with a prawn the counter adds 1

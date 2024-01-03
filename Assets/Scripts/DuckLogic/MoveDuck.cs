@@ -23,25 +23,21 @@ public class MoveDuck : MonoBehaviour
 
     void Update()
     {
-        currentY = transform.position.y;
-        if (Input.GetKey("space"))
+        if (EatingPrawns.win == false)
         {
-            if (currentY <= -1.4f)
+            currentY = transform.position.y;
+            if (Input.GetKey("space"))
             {
-                GetComponent<Rigidbody>().velocity = Vector3.zero;
+                if (currentY >= -1.4f)
+                {
+                    transform.position += new Vector3(0, -0.04f, 0);
+                }
             }
-            else
+
+            else if (currentY <= 3.5f)
             {
-                Dive();
+                transform.position += new Vector3(0, 0.03f, 0);
             }
-        }
-        else if (currentY < 3)
-        {
-            _rb.AddForce(0, returnspeed, 0, ForceMode.VelocityChange);
-        }
-        else if (currentY >= 3)
-        {
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
        // if(Input.GetKeyDown("space"))
        // {
