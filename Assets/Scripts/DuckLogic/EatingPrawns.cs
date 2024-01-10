@@ -35,6 +35,7 @@ public class EatingPrawns : MonoBehaviour
     {
         if ( win == true && Input.GetKeyDown("space"))
         {
+            win = false;
             SceneManager.LoadScene("water");
         }
     }
