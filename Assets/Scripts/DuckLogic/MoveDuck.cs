@@ -5,56 +5,41 @@ using UnityEngine;
 public class MoveDuck : MonoBehaviour
 {
     /*variable for the Game Object*/
-    public GameObject Player;
-    Rigidbody _rb;
+    Rigidbody rb;
+    public float Tauchen = -1f;
+    public float jumpForce = 0.5f;
 
-    /*variable for the speed going up and down of the Game Object*/
-    public float speed = -0.2f;
-    public float returnspeed = 0.1f;
-    private float currentY;
-    private float storeSpeed;
-    private Vector3 stopSign = new Vector3(0, 0, 0);
 
-    // Update is called once per frame
     void Start()
     {
-        _rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
+        
     }
 
     void Update()
     {
+
+
         if (EatingPrawns.win == false)
         {
-            currentY = transform.position.y;
-            if (Input.GetKey("space"))
+   
+            if (Input.GetKey(KeyCode.Space) && gameObject.transform.position.y >= -1.4f)
             {
-                if (currentY >= -1.4f)
+                  rb.velocity = new Vector3(rb.velocity.x, Tauchen, rb.velocity.z);
+
+            }
+
+            else if(gameObject.transform.position.y <= 3.5f)
                 {
-                    transform.position += new Vector3(0, -0.04f, 0);
+                    rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                     
                 }
-            }
 
-            else if (currentY <= 3.5f)
-            {
-                transform.position += new Vector3(0, 0.03f, 0);
-            }
+            else if(gameObject.transform.position.y >= 3.5f)
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+            
+                }
         }
-       // if(Input.GetKeyDown("space"))
-       // {
-       //     /* to move up the Game Object pressing space*/
-       //     Player.transform.Translate(Vector3.up*up*Time.deltaTime, Space.World);
-
-       // }  
-
-       //if(Input.GetKey("space"))
-       // {
-       //     /* to move down the Game Object pressing space*/
-       // Player.transform.Translate(Vector3.up*down*-Time.deltaTime, Space.World);
-      
-       // }
-    }
-    void Dive()
-    {
-        _rb.AddForce(0, speed, 0, ForceMode.VelocityChange);
     }
 }
